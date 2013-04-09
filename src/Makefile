@@ -122,9 +122,9 @@ posix:
 
 composite:
 	#$(MAKE) $(ALL) MYLDFLAGS="-static" SYSLIBS="-lm" 
-	$(MAKE) $(ALL) MYLDFLAGS="-static" SYSLIBS="-lm" "AR=$(CC) -static -o"
+	$(MAKE) $(ALL) MYLDFLAGS="-static" SYSLIBS="-lm" "AR=$(CC) -static -o"j
 	#$(MAKE) $(ALL) SYSCFLAGS="-DLUA_USE_POSIX" SYSLDFLAGS="-static"
-solaris:
+somegittest:
 	$(MAKE) $(ALL) SYSCFLAGS="-DLUA_USE_POSIX -DLUA_USE_DLOPEN" SYSLIBS="-ldl"
 
 # list targets that do not create files (but not all makes understand .PHONY)
