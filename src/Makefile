@@ -122,7 +122,7 @@ posix:
 
 composite:
 	#$(MAKE) $(ALL) MYLDFLAGS="-static" SYSLIBS="-lm" 
-	$(MAKE) $(ALL) MYLDFLAGS="-static" SYSLIBS="-lm" "AR=$(CC) -static -o"j
+	$(MAKE) $(ALL) MYLDFLAGS="-static" SYSLIBS="-lm" "AR=$(CC) -static -o"
 	#$(MAKE) $(ALL) SYSCFLAGS="-DLUA_USE_POSIX" SYSLDFLAGS="-static"
 somegittest:
 	$(MAKE) $(ALL) SYSCFLAGS="-DLUA_USE_POSIX -DLUA_USE_DLOPEN" SYSLIBS="-ldl"
